@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(61, 156, 240, 0.08), transparent 50%),
+    #07090d;
+  color: #e7eef5;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #263140 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263140;
+  border-radius: 99px;
+}
+
+input,
+select,
+textarea {
+  background: #10161f;
+  border: 1px solid #1c2533;
+  color: #e7eef5;
+}
+
+.table-dense td,
+.table-dense th {
+  padding: 0.45rem 0.7rem;
+}
